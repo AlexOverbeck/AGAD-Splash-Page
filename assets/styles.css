@@ -1,7 +1,19 @@
 body, html {
   margin: 0;
   padding: 0;
-  /* background-color: var(--agad-light-green); */
+
+  animation-name: rotate-background;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+p {
+  font-family: 'brandon-grotesque', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  width: clamp(300px, 50vw, 600px);
+  text-align: right;
+  margin-top: 0;
 }
 
 .content-wrapper {
@@ -10,11 +22,26 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("heart_cluster.webp");
-  background-size: 20vw auto;
+  background-image: url("heart_cluster.svg");
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  background-position: bottom -120px right -40px;
+  flex-direction: column;
 }
 
 .logo svg {
-  width: 50vh;
-  height: 50vh;
+  width: clamp(300px, 50vw, 600px);
+  height: auto;
+}
+
+@keyframes rotate-background {
+  0% {
+    background-color: var(--white);
+  }
+  33% {
+    background-color: var(--agad-light-green);
+  }
+  66% {
+    background-color: var(--agad-light-pink)
+  }
 }
