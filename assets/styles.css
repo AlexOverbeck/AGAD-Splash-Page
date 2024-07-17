@@ -10,7 +10,7 @@ body, html {
 p {
   font-family: 'brandon-grotesque', sans-serif;
   font-size: clamp(1rem, 2vw, 1.5rem);
-  width: clamp(300px, 50vw, 600px);
+  width: clamp(250px, 50vw, 600px);
   text-align: right;
   margin-top: 0;
   color: var(--black);
