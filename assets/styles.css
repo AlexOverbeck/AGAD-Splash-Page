@@ -29,8 +29,14 @@ p {
   flex-direction: column;
 }
 
+@media (orientation: portrait) {
+  .content-wrapper {
+    background-position: bottom -150px right -80px;
+  }
+}
+
 .logo svg {
-  width: clamp(300px, 50vw, 600px);
+  width: clamp(250px, 50vw, 600px);
   height: auto;
 }
 
