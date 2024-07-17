@@ -14,6 +14,7 @@ p {
   width: clamp(300px, 50vw, 600px);
   text-align: right;
   margin-top: 0;
+  color: var(--black);
 }
 
 .content-wrapper {
